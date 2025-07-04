@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentação Técnica de JavaScript</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>Documentação de JS</header>
+    <a class="nav-link" href="#Introdução">Introdução</a>
+    <a class="nav-link" href="#Variáveis_e_Tipos">Variáveis e Tipos</a>
+    <a class="nav-link" href="#Funções">Funções</a>
+    <a class="nav-link" href="#Eventos">Eventos</a>
+    <a class="nav-link" href="#DOM_Manipulação">DOM Manipulação</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introdução">
+      <header>Introdução</header>
+      <p>JavaScript é uma linguagem de programação interpretada usada para desenvolvimento web.</p>
+      <p>Ela permite a criação de interatividade nas páginas HTML.</p>
+      <p>Executa diretamente no navegador sem necessidade de compilação.</p>
+      <p>Possui suporte a paradigmas funcionais e orientados a objetos.</p>
+      <p>É usada tanto no frontend quanto no backend com Node.js.</p>
+      <code>console.log('Olá mundo');</code>
+      <ul>
+        <li>Leve</li>
+        <li>Interpretada</li>
+        <li>Alta performance</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variáveis_e_Tipos">
+      <header>Variáveis e Tipos</header>
+      <p>JavaScript permite a criação de variáveis com `var`, `let` e `const`.</p>
+      <p>O tipo de dado pode ser número, string, boolean, objeto, array, entre outros.</p>
+      <p>O JavaScript é fracamente tipado e dinâmico.</p>
+      <p>Exemplos de declaração:</p>
+      <code>let nome = 'João';</code>
+      <code>const idade = 30;</code>
+      <code>var ativo = true;</code>
+      <ul>
+        <li>string</li>
+        <li>number</li>
+        <li>boolean</li>
+        <li>object</li>
+        <li>undefined</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Funções">
+      <header>Funções</header>
+      <p>Funções são blocos de código reutilizáveis.</p>
+      <p>Podem ser declaradas com `function`, `const` (arrow functions) e `class` (métodos).</p>
+      <p>Permitem passar argumentos e retornar valores.</p>
+      <code>function somar(a, b) { return a + b; }</code>
+      <code>const subtrair = (a, b) => a - b;</code>
+      <ul>
+        <li>Função nomeada</li>
+        <li>Função anônima</li>
+        <li>Arrow function</li>
+        <li>Função de callback</li>
+        <li>Função construtora</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Eventos">
+      <header>Eventos</header>
+      <p>Eventos são ações do usuário ou do sistema que podem ser capturadas.</p>
+      <p>Podem ser adicionados com `addEventListener`.</p>
+      <p>Exemplos: clique, envio de formulário, carregamento da página.</p>
+      <code>document.addEventListener('click', () => alert('Clique detectado'));</code>
+      <code>btn.addEventListener('mouseover', handler);</code>
+      <ul>
+        <li>click</li>
+        <li>submit</li>
+        <li>mouseover</li>
+        <li>keydown</li>
+        <li>load</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="DOM_Manipulação">
+      <header>DOM Manipulação</header>
+      <p>O DOM representa a estrutura HTML como um objeto JS.</p>
+      <p>Você pode acessar e modificar elementos HTML usando JS.</p>
+      <p>Seletores comuns: `getElementById`, `querySelector`.</p>
+      <code>document.getElementById('titulo').innerText = 'Novo título';</code>
+      <code>document.querySelector('.classe').classList.add('ativo');</code>
+      <ul>
+        <li>Manipulação de conteúdo</li>
+        <li>Manipulação de classes</li>
+        <li>Criação de elementos</li>
+        <li>Remoção de elementos</li>
+        <li>Navegação entre nós</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
